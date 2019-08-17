@@ -9,5 +9,4 @@
 	#define ASSERT(x, ...) { if(!(x)) { ERROR("Assertion Failed: {0}", __VA_ARGS__); __debugbreak(); } }
 #else
 	#define ASSERT(x, ...)
-	#define CORE_ASSERT(x, ...)
 #endif
