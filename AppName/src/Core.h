@@ -1,4 +1,5 @@
 #pragma once
+
 #define APP_NAME "AppName"
 
 #ifdef DEBUG
@@ -6,7 +7,7 @@
 #endif
 
 #ifdef ENABLE_ASSERTS
-	#define ASSERT(x, ...) { if(!(x)) { ERROR("Assertion Failed: {0}", __VA_ARGS__); __debugbreak(); } }
+	#define ASSERT(x, ...) { if(!(x)) { ERROR("Assertion Failed: {0}", __VA_ARGS__); } }
 #else
 	#define ASSERT(x, ...)
 #endif
