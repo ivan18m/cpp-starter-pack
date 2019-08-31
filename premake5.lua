@@ -44,6 +44,7 @@ project "AppName"
 	{
 		"%{prj.name}/src",
 		"%{prj.name}/vendor/spdlog/include",
+		"%{prj.name}/vendor/catch2/single_include",
 	}
 
 	links 

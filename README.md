@@ -8,6 +8,6 @@ make
 * Premake5 scripts for Linux and Windows
 * Architecture: x64
 * Configurations: Debug / Release
-* With spdlog Logger
+* With `spdlog` Logger and `catch2` Testing framework
 * Precompiled headers file `AppName/src/pch.h`
 * Binaries compiled in `bin/`
