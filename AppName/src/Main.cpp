@@ -1,6 +1,5 @@
 #include "pch.h"
 #include "AppName/Application.h"
-#include "AppName/Log.h"
 
 int main(int argc, char** argv) 
 {
