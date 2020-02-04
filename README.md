@@ -1,10 +1,12 @@
 Clone with submodules
 ```
-git clone --recurse-submodules https://github.com/ivan18m/CppTemplate
-cd CppTemplate
+git clone --recurse-submodules https://github.com/ivan18m/cpp-starter-pack.git
+cd cpp-starter-pack
 ./GenerateProjects.sh
 make
 ```
+If on windows generate Visual Studio Solution with `.bat` script
+
 * Premake5 scripts for Linux and Windows
 * Architecture: x64
 * Configurations: Debug / Release
