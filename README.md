@@ -5,7 +5,7 @@ cd cpp-starter-pack
 ./GenerateProjects.sh
 make
 ```
-If on windows generate Visual Studio Solution with `.bat` script
+If on windows generate Visual Studio Solution with `GenerateProjects.bat` script
 
 * Premake5 scripts for Linux and Windows
 * Architecture: x64
