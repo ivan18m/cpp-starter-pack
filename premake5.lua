@@ -1,11 +1,21 @@
 workspace "AppName"
-	architecture "x64"
 	startproject "AppName"
 
 	configurations
 	{
 		"Debug",
 		"Release"
+	}
+
+	filter "configurations:*"
+		architecture "x86_64"
+
+	filter "configurations:*"
+		architecture "ARM"
+
+	flags
+	{
+		"MultiProcessorCompile"
 	}
 
 outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
@@ -77,12 +87,12 @@ project "AppName"
 			"PLATFORM_MAC"
         }
 
-	filter "configurations:Debug"
+	filter "configurations:Debug*"
 		defines "DEBUG"
 		runtime "Debug"
 		symbols "on"
 
-	filter "configurations:Release"
+	filter "configurations:Release*"
 		defines "RELEASE"
 		runtime "Release"
 		optimize "on"

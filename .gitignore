@@ -2,6 +2,7 @@
 *.user
 Makefile
 /bin/
+/obj/
 
 ### STS ###
 .apt_generated
