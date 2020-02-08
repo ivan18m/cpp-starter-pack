@@ -1,18 +1,19 @@
 #include "pch.h"
 #include "Application.h"
-#include "AppName/Log.h"
+#include "Application/Log.h"
 
 namespace AppName 
 {
-
 	Application* Application::s_Instance = nullptr;
 
+	/**
+	 * Allow only a single instance
+	 */
 	Application::Application()
 	{
 		ASSERT(!s_Instance, "Application already exists!");
 		s_Instance = this;
 	}
-
 
 	void Application::Run()
 	{
@@ -27,9 +28,11 @@ namespace AppName
 		m_Running = false;
 		return true;
 	}
-
 }
 
+/**
+ * Create an application instance
+ */
 AppName::Application* AppName::CreateApplication()
 {
     return new AppName::Application();

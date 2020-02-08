@@ -12,7 +12,7 @@
 #include <unordered_map>
 #include <unordered_set>
 
-#include "AppName/Log.h"
+#include "Application/Log.h"
 
 #ifdef PLATFORM_WINDOWS
 	#include <Windows.h>

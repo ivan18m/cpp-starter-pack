@@ -4,8 +4,13 @@
 #include "spdlog/spdlog.h"
 #include "spdlog/fmt/ostr.h"
 
-namespace AppName {
 
+namespace AppName 
+{
+	/**
+	 * Macros enable easy library switch
+	 * spdlog shared-pointer implementation
+	 */
 	class Log
 	{
 	public:
@@ -15,11 +20,9 @@ namespace AppName {
 	private:
 		static std::shared_ptr<spdlog::logger> s_Logger;
 	};
-
 }
 
-
-// Client log macros
+// Macros
 #define TRACE(...)     ::AppName::Log::GetLogger()->trace(__VA_ARGS__)
 #define INFO(...)      ::AppName::Log::GetLogger()->info(__VA_ARGS__)
 #define WARN(...)      ::AppName::Log::GetLogger()->warn(__VA_ARGS__)

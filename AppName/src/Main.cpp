@@ -1,6 +1,6 @@
 #include "pch.h"
-#include "AppName/Application.h"
-#include "AppName/Test.h"
+#include "Application/Application.h"
+#include "Application/Test.h"
 
 int main(int argc, char** argv) 
 {
